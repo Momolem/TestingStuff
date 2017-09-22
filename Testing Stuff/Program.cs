@@ -13,11 +13,11 @@ namespace Testing_Stuff {
             Random rnd = new Random();
             while(true) {
                 int solution = rnd.Next(1, 60);
-                Console.Out.Write("Errate die Zahl");
+                Console.Out.WriteLine("Errate die Zahl");
                 richtig = false;
                 while (!richtig)
                 {
-                    int antwort = Int32.Parse(Console.In.ReadLine());
+                    int antwort = Convert.ToInt32(Console.In.ReadLine());
 
                     if(antwort > solution)
                     {
